@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Disk Scheduling Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Disk Scheduling Visualizer</h1>
+
+<input type="text" id="requests" placeholder="Enter Requests (98,183,37)">
+<br>
+
+<input type="number" id="head" placeholder="Enter Head Position">
+<br>
+
+<select id="algo">
+    <option value="fcfs">FCFS</option>
+    <option value="sstf">SSTF</option>
+    <option value="scan">SCAN</option>
+    <option value="cscan">C-SCAN</option>
+    <option value="look">LOOK</option>
+    <option value="clook">C-LOOK</option>
+</select>
+<br>
+
+<button onclick="run()">Visualize</button>
+
+<h2 id="result"></h2>
+
+<canvas id="chart" width="700" height="350"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
